@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YBike || Reserve</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/reserveStyle.css">
+</head>
+<body>
+    <script src="../JS/func.js"></script>
+    <div id="header">
+        <div id="headerLogo">
+            <img src="../assets/Logo.png" alt="">
+        </div>
+    </div>
+
+    <div id="navbar">
+        <div class="button" id="homeBtn">
+            <a href="homepage.html">Home</a>
+        </div>
+        <div class="button" id="productBtn">
+            <div class="button" id="ddparent">
+                <a href="#">Product</a>
+                <ul id="ddsub">
+                    <li class="button"><a href="kawasako.html">Kawasako</a></li>
+                    <li class="button"><a href="vixian.html">Vixian</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="button" id="galleryBtn">
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="button" id="reserveBtn">
+            <a href="reserve.html">Reserve</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="container">
+            <form action="" class="form" onsubmit="validation();">
+                <label class="formhead" for="">Motorcycle Option</label>
+                <br>
+                <br>
+                <label for="brandselect">Product: </label>
+                <br>
+                <select name="Motorcycle" id="prodselect">
+                    <option value="ph">Select Brand</option>
+                    <option value="k1">Kawasako B Class</option>
+                    <option value="k2">Kawasako A Class</option>
+                    <option value="k3">Kawasako S Class</option>
+                    <option value="v1">Vixian Speed</option>
+                    <option value="v2">Vixian Super</option>
+                    <option value="v3">Vixian Ultra</option>
+                </select>
+                <br>
+                <label for="quan">Quantity:</label>
+                <br>
+                <input type="text" name="quan" id="quan">
+                <br>
+                <label for="color">Colour:</label>
+                <br>
+                <input type="color" name="" id="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="" class="formhead">Personal Information</label>
+                <br><br>
+                <label for="custname">Name<span>*</span>:</label>
+                <br>
+                <input type="text" name="name" id="custname">
+                <br>
+                <label for="custphone">Phone Number<span>*</span>:</label>
+                <br>
+                <input type="text" name="phone" id="custphone">
+                <br>
+                <label for="cust">Address<span>*</span>:</label>
+                <br>
+                <textarea name="address" id="custaddress" cols="30" rows="10"></textarea>
+                <br>
+                <button class="btn" type="submit">Order</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Created by : 2301887448 - Yuriko Diego Saputra</p>
+    </div>
+</body>
+</html>
